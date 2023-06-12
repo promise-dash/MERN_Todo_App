@@ -5,7 +5,6 @@ const Home = () => {
   const [todo, setTodo] = useState("");
   const token = localStorage.getItem("token");
   const [todos, setTodos] = useState([]);
-  // const [updatedTodo, setUpdatedTodo] = useState("");
 
   useEffect(() => {
     const getTodos = async () => {
