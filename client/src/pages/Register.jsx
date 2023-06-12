@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Register = () => {
 
-  const navigate = useNavigate();
   const [userData, setUserData] = useState({
     username: '',
     email: '',
@@ -29,7 +28,7 @@ const Register = () => {
     alert(data);
     
     if(response.ok){
-      navigate('/login');
+      window.location.href="/login";
     }
   };
 
